@@ -1,0 +1,23 @@
+docker run -i --name ex3 ubuntu:16.04 sh -c 'read website; sleep 3; curl http://$website;'
+
+In an another terminal;
+
+docker exec -it ex3 /bin/bash
+root@dba4b0222397:/# apt-get update
+root@dba4b0222397:/# apt-get -y install curl
+root@dba4b0222397:/# exit
+
+In the original terminal;
+
+helsinki.fi
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   231  100   231    0     0    777      0 --:--:-- --:--:-- --:--:--   780
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+
