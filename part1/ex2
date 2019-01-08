@@ -1,0 +1,8 @@
+osku@osku-VirtualBox:~$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+osku@osku-VirtualBox:~$ 
+
+
+osku@osku-VirtualBox:~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+osku@osku-VirtualBox:~$ 
