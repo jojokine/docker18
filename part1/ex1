@@ -1,0 +1,6 @@
+osku@osku-VirtualBox:~$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+0007a9040655        nginx               "nginx -g 'daemon of…"   27 seconds ago      Up 26 seconds              80/tcp              elegant_nash
+0328ac540225        nginx               "nginx -g 'daemon of…"   29 seconds ago      Exited (0) 8 seconds ago                       keen_payne
+6fec51649409        nginx               "nginx -g 'daemon of…"   34 seconds ago      Exited (0) 3 seconds ago                       fervent_albattani
+
