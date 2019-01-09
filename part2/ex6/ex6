@@ -1,0 +1,1 @@
+The buttons for excersise 1.7, 2.2 and 2.3 are not working because they are referring directly to the port of the backend service. As the requests now originate from the nginx proxy instead of the frontend service (which is defined as the allowed source for requests in the backend), the backend is not accepting the requests.
