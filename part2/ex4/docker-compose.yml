@@ -1,0 +1,24 @@
+version: '3' 
+
+services:
+ training:
+  image: jojokine/training
+  build: /home/osku/Documents/docker18_materials/ml-kurkkumopo-training-master
+  volumes:
+   - /home/osku/Documents/docker18_materials/kurkkumopo/data:/data
+   - /home/osku/Documents/docker18_materials/kurkkumopo/imgs:/src/imgs
+   - /home/osku/Documents/docker18_materials/kurkkumopo/model:/src/model
+
+ backend:
+  image: jojokine/backend
+  build: /home/osku/Documents/docker18_materials/ml-kurkkumopo-backend-master
+  volumes:
+   - /home/osku/Documents/docker18_materials/kurkkumopo/model:/src/model
+  ports:
+   - 5000:5000
+ 
+ frontend:
+  image: jojokine/frontend
+  build: /home/osku/Documents/docker18_materials/ml-kurkkumopo-frontend-master
+  ports:
+   - 3000:3000
