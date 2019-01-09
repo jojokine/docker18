@@ -1,0 +1,16 @@
+version: '3' 
+
+services:
+ backend:
+  image: jojokine/backend
+  build: /home/osku/Documents/docker18_materials/backend-example-docker-master
+  volumes:
+   - /home/osku/Documents/docker18_materials/backend-example-docker-master/logs.txt:/logs.txt
+  ports:
+   - 8000:8000
+ 
+ frontend:
+  image: jojokine/frontend
+  build: /home/osku/Documents/docker18_materials/frontend-example-docker-master
+  ports:
+   - 5000:5000
