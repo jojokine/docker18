@@ -1,0 +1,12 @@
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+jojokine/backend    latest              942d0457a815        2 hours ago         344MB
+jojokine/frontend   latest              9a0271c2e57c        4 hours ago         441MB
+
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+jojokine/frontend   latest              6ae43235fb89        4 minutes ago       413MB
+jojokine/backend    latest              1703501fee7e        8 minutes ago       316MB
+
+
+

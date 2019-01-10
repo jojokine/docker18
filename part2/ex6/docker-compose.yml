@@ -21,6 +21,7 @@ services:
   image: jojokine/backend
   build: /home/osku/Documents/docker18_materials/backend-example-docker-master
   environment:
+   - FRONT_URL=http://localhost:5000
    - REDIS=redis
    - DB_USERNAME=postgres
    - DB_PASSWORD=mysecretpassword
@@ -33,6 +34,8 @@ services:
  frontend:
   image: jojokine/frontend
   build: /home/osku/Documents/docker18_materials/frontend-example-docker-master
+  environment:
+   - API_URL=http://localhost/api
   ports:
    - 5000:5000
 
