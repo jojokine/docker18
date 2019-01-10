@@ -1,0 +1,9 @@
+version: '3' 
+
+services:
+ yledl:
+  build: /home/osku/Documents/docker18/part3/ex2
+  image: jojokine/yledl
+  volumes:
+   - /home/osku/Downloads:/downloads
+
